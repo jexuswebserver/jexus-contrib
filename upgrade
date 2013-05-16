@@ -1,0 +1,39 @@
+#!/bin/sh
+
+SRC_DIR=$(cd $(dirname $0);pwd)
+DAT_DIR=${SRC_DIR}/data
+JWS_DIR='/usr/jexus'
+
+if [ 'x'$1 != 'x' ]; then
+  JWS_DIR=$1
+fi
+
+if [ ! -d $JWS_DIR ]; then
+  echo "Can't find" ${JWS_DIR}
+  exit 1
+fi
+
+rm -f ${JWS_DIR}/jws >/dev/null 2>&1
+rm -f ${JWS_DIR}/*.exe ${JWS_DIR}/*.dll ${JWS_DIR}/*.conf ${JWS_DIR}/def.py  >/dev/null 2>&1
+if [ -f ${JWS_DIR}/jws.start ]; then
+  rm -f ${JWS_DIR}/jws.* ${JWS_DIR}/state.* >/dev/null 2>&1
+fi
+
+
+cp -f ${DAT_DIR}/jws $JWS_DIR
+cp -f ${DAT_DIR}/*.exe ${DAT_DIR}/*.dll ${DAT_DIR}/*.conf ${DAT_DIR}/def.py $JWS_DIR
+
+if [ ! -f ${JWS_DIR}/jws ]; then
+  echo 'copy file error.'
+  exit 1
+fi
+
+chmod +x ${JWS_DIR}/jws
+
+cd $JWS_DIR
+./jws regsvr
+cd $SRC_DIR
+
+echo "OK, Jexus has been upgraded, work directory is '"${JWS_DIR}"'."
+
+

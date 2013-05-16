@@ -1,0 +1,40 @@
+#!/bin/sh
+
+SRC_DIR=$(cd $(dirname $0);pwd)
+DAT_DIR=${SRC_DIR}/data
+JWS_DIR='/usr/jexus'
+
+if [ 'x'$1 != 'x' ]; then
+  JWS_DIR=$1
+fi
+
+
+if [ ! -d $JWS_DIR ]; then
+  mkdir $JWS_DIR
+fi
+
+if [ ! -d $JWS_DIR ]; then
+  echo 'Create '${JWS_DIR}' error'.
+  exit 1
+fi
+
+rm -rf ${JWS_DIR}/* >/dev/null 2>&1
+cp -rf ${DAT_DIR}/* $JWS_DIR
+
+if [ ! -f ${JWS_DIR}/jws ]; then
+  echo 'copy file error.'
+  exit 1
+fi
+
+chmod +x ${JWS_DIR}/jws
+
+rm -rf ${JWS_DIR}/read*.txt >/dev/null 2>&1
+rm -rf ${JWS_DIR}/tools >/dev/null 2>&1
+
+cd $JWS_DIR
+./jws regsvr
+cd $SRC_DIR
+
+echo "OK, Jexus web server has been installed to '"${JWS_DIR}"'."
+
+
