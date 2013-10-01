@@ -171,4 +171,23 @@ In default installation, a default web site is created. Its configuration file i
 
 *2 To enable HTTPS, please follow the steps in this blog post.
 
+Management Script and Commands
+------------------------------
+Starting Jexus 5.3 the commands are merged into one Shell script, /usr/jexus/jws.
+
+This script provides the following functionality,
+
+| Command | Description |
+| jws start | Start Jexus server. |
+| jws start site\_name | Start a single web site. Note that site_name must match one of the configuration files under configuration directory. |
+| jws restart | Restart Jexus server. |
+| jws restart site_name | Restart a single web site. |
+| jws stop | Stop Jexus server. |
+| jws stop site_name | Stop a single web site. |
+| jws regsvr | Register Jexus assembly in GAC. Note that this is only required to be executed once during installation. 
+jws status Report Jexus runtime status. |
+| jws -v | Display Jexus version number. |
+
+The script should be set to executable during installation. The commands can only be executed by root.
+
 Questions on Jexus can be posted to https://github.com/jexuswebserver/jexus-contrib/issues.
