@@ -54,7 +54,7 @@ sudo ./jws start
 
 Now if we open Firefox and navigate to http://localhost, the test page we created is displayed correctly,
 
-![Jexus test page in Firefox](http://www.flickr.com/photos/lextm/10033487784/ Jexus test page in Firefox)
+![Jexus test page in Firefox](http://flic.kr/p/ghCfmG Jexus test page in Firefox)
 
 Upgrade
 -------
