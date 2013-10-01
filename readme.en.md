@@ -33,8 +33,6 @@ tar -zxvf jexus-5.4.4.tar.gz
 
 > Jexus binary package is downloaded from its official site, and extracted to a folder named “jexus-5.3.1″ after this step.
 
-![Jexus installation package](http://i1.wp.com/4.bp.blogspot.com/-CbxYR1zwpk0/Uc-hWZhJziI/AAAAAAAAA5g/ClcbI6sDcVM/s599/jexus5.3.1.png Jexus installation package)
-
 ####3. Create default web site
 
 1. `sudo vi /var/www/default/index.html`
@@ -56,7 +54,7 @@ sudo ./jws start
 
 Now if we open Firefox and navigate to http://localhost, the test page we created is displayed correctly,
 
-![Jexus test page in Firefox](http://i1.wp.com/2.bp.blogspot.com/-_dwSh2Xa_pE/UY41ZpdFLOI/AAAAAAAAA34/BwOeEvg49l4/s1600/jexus2.PNG Jexus test page in Firefox)
+![Jexus test page in Firefox](http://farm6.staticflickr.com/5509/10033487784_46225f3f14.jpg Jexus test page in Firefox)
 
 Upgrade
 -------
