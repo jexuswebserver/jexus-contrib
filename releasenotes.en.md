@@ -7,7 +7,7 @@ Released on Oct 1, 2013
 1. Maximum number of worker processes is increased to [number of CPU cores] + 1 (still need to be <= 8).
 2. Maximum connections are now dynamically adjusted to avoid file descriptor exhaustion.
 3. Enabled TCP\_DEFER\_ACCEPT option at TCP layer.
-4. Fixed "cannot find hang worker processes in heatbeat check" bug.
+4. Fixed "cannot find all hang worker processes" bug in heatbeat check.
 5. Fixed chunked transfer encoding bug.
 6. Fixed "ASP.NET module cannot get external port number in NAT setup where external and internal port numbers differ" bug.
 
