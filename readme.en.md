@@ -23,7 +23,7 @@ The following steps assume that you use latest Ubuntu Linux distro.
 ####1. Install Mono runtime.
 `sudo apt-get install mono-complete`
 
-> As Jexus requires Mono runtime, in this step we install latest stable Mono runtime (2.10.*) via apt-get. Mono 3.0.* is recommended if you know how to get it compiled and installed. 
+> As Jexus requires Mono runtime, in this step we install latest stable Mono runtime (2.10.*) via apt-get. Mono 3.2.* is recommended. 
 
 ####2. Downloadn and unpack Jexus
 ```
