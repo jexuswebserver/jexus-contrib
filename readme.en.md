@@ -100,8 +100,6 @@ Configuration System
 --------------------
 Jexus currently uses configuration format similar to Apache/Nginx.
 
-Note that any change to configuration only takes effect when Jexus is restarted.
-
 ####Server Configuration
 The configuration file, which contains most of Jexus settings, is located in Jexus installation folder (usually /usr/jexus) and named jws.conf.
 
@@ -111,6 +109,8 @@ Unlike IIS which uses XML to store settings, the Jexus settings are stored in ke
 SiteLogDir=log
 SiteConfigDir=siteconf
 ```
+
+Note that any change to server configuration only takes effect when Jexus is restarted.
 
 The description of each settings is listed as below,
 
@@ -132,6 +132,8 @@ In default installation, /usr/jexus/siteconf is used as configuration directory,
 Jexus supports multiple web sites running on the same server. The web sites use individual bindings to distinguish from each other.
 
 The web site configuration files must be saved in the configuration directory set in jws.conf (aka SiteConfigDir). The configuration file name is used as site name (site name is only used in Jexus commands), which should not contain spaces. Note that all files in configuration directory are treated as web site configuration files. Thus, don’t leave anything else there.
+
+Note that any change to web site configuration only takes effect when the web site is restarted.
 
 In default installation, a default web site is created. Its configuration file is /usr/jexus/siteconf/default. Just like jws.conf, the web site configuration is also stored in key value pair, and the description of each settings is as below,
 
