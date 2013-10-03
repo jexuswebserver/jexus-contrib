@@ -100,6 +100,8 @@ Configuration System
 --------------------
 Jexus currently uses configuration format similar to Apache/Nginx.
 
+Note that any change to configuration only takes effect when Jexus is restarted.
+
 ####Server Configuration
 The configuration file, which contains most of Jexus settings, is located in Jexus installation folder (usually /usr/jexus) and named jws.conf.
 
