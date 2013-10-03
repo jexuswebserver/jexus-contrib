@@ -1,8 +1,8 @@
 | Features | IIS 7+ | Jexus 5 | Differences | 
 | -------- | ------ | ------- | ----------- |
-| ASP.NET Web Forms | Complete | Complete | Jexus is only limited by Mono. |
-| ASP.NET MVC	| Complete | Complete | Jexus is only limited by Mono. |
-| ASP.NET Web API | Complete | Complete | Jexus is only limited by Mono. |
+| ASP.NET Web Forms | Complete | Complete | Jexus is affected by Mono limitations. |
+| ASP.NET MVC	| Complete | Complete | Jexus is affected by Mono limitations. |
+| ASP.NET Web API | Complete | Complete | Jexus is affected by Mono limitations. |
 | WCF | Complete | Complete | Not all WCF features are supported by Mono. |
 | Application pool | Complete | Partly | Jexus supports one pool only. |
 | Web Garden | Complete | Partly | Jexus supports up to 8 worker processes. | 
