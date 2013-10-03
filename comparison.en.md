@@ -1,10 +1,10 @@
 | Features | IIS 7+ | Jexus 5 | Differences | 
 | -------- | ------ | ------- | ----------- |
-| ASP.NET Web Forms | Complete | Complete | Jexus is affected by Mono limitations. |
-| ASP.NET MVC	| Complete | Complete | Jexus is affected by Mono limitations. |
-| ASP.NET Web API | Complete | Complete | Jexus is affected by Mono limitations. |
+| ASP.NET Web Forms | Complete | Complete | Jexus is affected by Mono limitations. [*] |
+| ASP.NET MVC	| Complete | Complete | Jexus is affected by Mono limitations. [*] |
+| ASP.NET Web API | Complete | Complete | Jexus is affected by Mono limitations. [*] |
 | WCF | Complete | Complete | Not all WCF features are supported by Mono. |
-| Application pool | Complete | Partly | Jexus supports one pool only. |
+| Application pool | Complete | Partly | Jexus supports one pool only. [**] |
 | Web Garden | Complete | Partly | Jexus supports up to 8 worker processes. | 
 | URL Rewrite | Complete (via OOB installer) | Complete | Jexus does not support outbound rules. |
 | Reverse proxy | Complete (via OOB installer of ARR) | Complete | |
@@ -21,3 +21,7 @@
 | Failed Request Tracing | Complete | No | |
 | Other IIS features | Complete | No | |
 
+*: Mono 3.2 is recommended, in which the Mono guys fixed most known issues.
+**: Other differences include but not limited to,
+1. Compared to IIS, Jexus uses a built-in algorithm to perform ping instead of providing related settings.
+2. Jexus worker process is fully managed.
