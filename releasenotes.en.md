@@ -8,7 +8,7 @@ Released on Oct 1, 2013
 2. Maximum connections are now dynamically adjusted to avoid file descriptor exhaustion.
 3. Enabled TCP\_DEFER\_ACCEPT option at TCP layer.
 4. Fixed "cannot find all hang worker processes" bug in application pool ping.
-5. Fixed chunked transfer encoding bug.
+5. Fixed "Range: byte=0-x is not properly processed" bug in Range header processing.
 6. Fixed "ASP.NET module cannot get external port number in NAT setup where external and internal port numbers differ" bug.
 
 ####Version 5.4
