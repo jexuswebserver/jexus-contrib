@@ -144,18 +144,18 @@ In default installation, a default web site is created. Its configuration file i
 | hosts | no | The host header accepted by this web site. Default is `hosts=*`, which means any host header is accepted. Wildcard is also supported, such as *.mysite.com. |
 | root | yes | The directory mapping. The default is `root=/ /var/www/default`, which maps physical directory  /var/www/default that contains the web site contents to web site root. |
 | indexes | no | Default document name list. For example, when `indexes=index.aspx,index.htm` is used, access to / will be resolved to index.aspx if it exists, and then index.htm if exists, and 404 if none of them exists. When this setting is not set, Jexus uses its built-in name list. See (*1)for more details. |
-| rewrite | no | URL rewrite rule. For example, `rewrite=^/.+?\.(asp&#124;php&#124;cgi)$ /404.html` means any access to classic ASP/PHP/CGI pages is rewritten to /404.html. To use multiple rules, use multiple lines of `rewrite=`. | 
+| rewrite | no | URL rewrite rule. For example, <code>rewrite=^/.+?\.(asp&#124;php&#124;cgi)$ /404.html</code> means any access to classic ASP/PHP/CGI pages is rewritten to /404.html. To use multiple rules, use multiple lines of `rewrite=`. | 
 | denyfrom | no | IP address restriction. For example, when `denyfrom=111.222.111.*,1.1.1.1` is used, access from the IP addreses are denied. Mask is also supported, such as `denyfrom=192.168.1.0/255.255.255.0`. |
 | allowfrom | no | IP address restriction. For example, when `allowfrom=111.222.111.*,1.1.1.1` is used, only access from the IP addresses are allowed. All other access is denied. |
 | DenyDirs | no | Hidden segments. When `DenyDirs=bin,App_code` is used, access to such URL paths is denied. |
 | checkquery | no | Query strings restriction. Jexus uses built-in logic to perform query safety check. The default is `checkquery=true`. Note that by setting this to true, there is some impact on Jexus performance. |
 | nofile | no | NOFILE is a Jexus specific feature. It is similar to IIS custom error pages for 404. When `nofile=/mvc/controller.aspx` is used, access to non-existent files is redirected to /mvc/controller.aspx. Note that the original URL is passed via X-Real-Uri server variable. |
 | nolog | no | Logging flag. The default is `nolog=false`. When set to true, Jexus stops generating log files for this web site. |
-| keep\_alive | no | HTTP keep-alive flag. The default is `keep\_alive=true`. | 
-| reproxy | no | Reverse proxy rule. When `reproxy= /abc/ http://www.xxxx.com:890/abc/` is used, requests on /abc/ (source) will be redirected to http://www.xxxx.com:890/abc/ (destination). The destination can be multiple, so that Jexus randomly picks one from them, which is similar to load balancing. For example, reproxy=/abc/ http://192.168.0.3/abc/,http://192.168.0.4/abc/. |
+| keep\_alive | no | HTTP keep-alive flag. The default is `keep_alive=true`. | 
+| reproxy | no | Reverse proxy rule. When `reproxy=/abc/ http://www.xxxx.com:890/abc/` is used, requests on /abc/ (source) will be redirected to http://www.xxxx.com:890/abc/ (destination). The destination can be multiple, so that Jexus randomly picks one from them, which is similar to load balancing. For example, `reproxy=/abc/ http://192.168.0.3/abc/,http://192.168.0.4/abc/`. |
 | fastcgi.add | no | FastCGI rule. For TCP connections, typical setting is `fastcgi.add=php,php3|tcp:127.0.0.1:9000`, which forwards requests of .php or php3 extensions to 127.0.0.1:9000 via TCP. For UNIX sockets, typical setting is `fastcgi.add=php,php3|socket:/tmp/phpsvr` 
-| usegzip | no | GZip compression flag. The default is usegzip=true. |
-| usehttps | no | SSL flag. To enable HTTPS, this setting must be set to true, and port must be set to 443 at the same time. The default is usehttps=false. See (*2) for more details. |
+| usegzip | no | GZip compression flag. The default is `usegzip=true`. |
+| usehttps | no | SSL flag. To enable HTTPS, this setting must be set to true, and port must be set to 443 at the same time. The default is `usehttps=false`. See (*2) for more details. |
 
 *1 The Jexus built-in default document name list is as below,
 * index.aspx
