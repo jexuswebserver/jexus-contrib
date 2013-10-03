@@ -7,7 +7,7 @@
 | Application pool | Complete | Partly | Jexus supports one pool only. |
 | Web Garden | Complete | Partly | Jexus supports up to 8 worker processes. | 
 | URL Rewrite | Complete (via OOB installer) | Complete | Jexus does not support outbound rules. |
-| Reverse proxy | Complete (via OOB installer of ARR) | Partly ||
+| Reverse proxy | Complete (via OOB installer of ARR) | Complete ||
 | Request filtering | Complete | Partly | Jexus only supports a few checks. |
 | FastCGI | Complete | Complete | |
 | HTTPS | Complete | Partly | Jexus does not have SNI support yet. |
