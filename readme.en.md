@@ -144,7 +144,7 @@ In default installation, a default web site is created. Its configuration file i
 | hosts | no | The host header accepted by this web site. Default is `hosts=*`, which means any host header is accepted. Wildcard is also supported, such as *.mysite.com. |
 | root | yes | The directory mapping. The default is `root=/ /var/www/default`, which maps physical directory  /var/www/default that contains the web site contents to web site root. |
 | indexes | no | Default document name list. For example, when `indexes=index.aspx,index.htm` is used, access to / will be resolved to index.aspx if it exists, and then index.htm if exists, and 404 if none of them exists. When this setting is not set, Jexus uses its built-in name list. See (*1)for more details. |
-| rewrite | no | URL rewrite rule. For example, `rewrite=^/.+?\.(asp|php|cgi)$ /404.html` means any access to classic ASP/PHP/CGI pages is rewritten to /404.html. To use multiple rules, use multiple lines of rewrite=. | 
+| rewrite | no | URL rewrite rule. For example, `rewrite=^/.+?\.(asp&#124;php&#124;cgi)$ /404.html` means any access to classic ASP/PHP/CGI pages is rewritten to /404.html. To use multiple rules, use multiple lines of `rewrite=`. | 
 | denyfrom | no | IP address restriction. For example, when `denyfrom=111.222.111.*,1.1.1.1` is used, access from the IP addreses are denied. Mask is also supported, such as `denyfrom=192.168.1.0/255.255.255.0`. |
 | allowfrom | no | IP address restriction. For example, when `allowfrom=111.222.111.*,1.1.1.1` is used, only access from the IP addresses are allowed. All other access is denied. |
 | DenyDirs | no | Hidden segments. When `DenyDirs=bin,App_code` is used, access to such URL paths is denied. |
