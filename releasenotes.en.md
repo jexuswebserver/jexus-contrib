@@ -7,9 +7,16 @@ Released on Oct 1, 2013
 1. Maximum number of worker processes is increased to [number of CPU cores] + 1 (still need to be <= 8).
 2. Maximum connections are now dynamically adjusted to avoid file descriptor exhaustion.
 3. Enabled TCP\_DEFER\_ACCEPT option at TCP layer.
-4. Fixed "cannot find all hang worker processes" bug in heatbeat check.
+4. Fixed "cannot find all hang worker processes" bug in application pool ping.
 5. Fixed chunked transfer encoding bug.
 6. Fixed "ASP.NET module cannot get external port number in NAT setup where external and internal port numbers differ" bug.
+
+####Version 5.4
+Released on July 1, 2013
+
+1. Added application pool ping support.
+2. Added a new option to change socket listener binding from default to a certain IP address.
+3. Added a new option to control IP address whitelist.
 
 ####Version 5.3
 Released on May 11, 2013
