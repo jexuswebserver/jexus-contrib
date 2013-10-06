@@ -6,7 +6,7 @@
 | WCF | Complete | Complete | Not all WCF features are supported by Mono. |
 | Application pool | Complete | Partly | Jexus supports one pool only. [**] |
 | Web Garden | Complete | Partly | Jexus supports up to 8 worker processes. | 
-| URL Rewrite | Complete (via OOB installer) | Complete | Jexus does not support outbound rules. |
+| URL Rewrite | Complete (via OOB installer) | Partly | Jexus does not support outbound rules. [***] |
 | Reverse proxy | Complete (via OOB installer of ARR) | Complete | |
 | IP address restriction | Complete | Complete | Jexus does not support dynamic IP restriction. |
 | Request filtering | Complete | Partly | Jexus only supports a few checks. |
@@ -25,3 +25,8 @@
 **: Other differences include but not limited to,
 1. Compared to IIS, Jexus uses a built-in algorithm to perform ping instead of providing related settings.
 2. Jexus worker process is fully managed.
+***: Other differences include,
+1. Jexus does not support actions such as Redirect or AbortRequest.
+2. Jexus does not support conditions.
+3. Jexus cannot break from cascading rules.
+
