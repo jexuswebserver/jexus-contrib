@@ -119,6 +119,7 @@ The description of each settings is listed as below,
 | SiteConfigDir | yes | The directory that holds web site configuration files. Relative paths to jws.exe can be used. |
 | SiteLogDir | yes | The directory that holds the log files. Relative paths to jws.exe can be used. |
 | Runtime | no | Application pool ASP.NET runtime version. For example, `Runtime=v4.0.30319` |
+| httpd.processes | no | Specifies the number of worker processes associated with the application pool. A value other than 1 indicates a Web garden. The default value is 1. |
 | httpd.user | no | Application pool identity. For example, `httpd.user=www-data` |
 
 The first two settings are mandatory.
