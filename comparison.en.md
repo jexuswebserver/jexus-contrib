@@ -4,11 +4,11 @@
 | ASP.NET MVC	| Complete | Complete | Jexus is affected by Mono limitations. [*] |
 | ASP.NET Web API | Complete | Complete | Jexus is affected by Mono limitations. [*] |
 | WCF | Complete | Complete | Not all WCF features are supported by Mono. |
-| Application pool | Complete | Partly | Jexus supports one pool only. [**] |
-| Web Garden | Complete | Partly | Jexus supports up to 8 worker processes. | 
-| URL Rewrite | Complete (via OOB installer) | Partly | Jexus does not support outbound rules. [***] |
+| Application pool | Complete | [Partly](http://www.lextm.com/2013/10/jexus-series-application-pool-setting/) | Jexus supports one pool only. [**] |
+| Web Garden | Complete | [Partly](http://www.lextm.com/2013/10/jexus-series-application-pool-setting/) | Jexus supports up to 8 worker processes. | 
+| URL Rewrite | Complete (via OOB installer) | [Partly](http://www.lextm.com/2013/10/jexus-series-url-rewrite/) | Jexus does not support outbound rules. [***] |
 | Reverse proxy | Complete (via OOB installer of ARR) | Complete | |
-| IP address restriction | Complete | Complete | Jexus does not support dynamic IP restriction. |
+| IP address restriction | Complete | [Complete](http://www.lextm.com/2013/10/jexus-series-ip-and-domain-restrictions/) | Jexus does not support dynamic IP restriction. |
 | Request filtering | Complete | Partly | Jexus only supports a few checks. |
 | FastCGI | Complete | Complete | |
 | HTTPS | Complete | Partly | Jexus does not have SNI support yet. |
