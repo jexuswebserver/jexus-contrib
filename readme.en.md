@@ -121,7 +121,7 @@ The description of each settings is listed as below,
 | Runtime | no | Application pool ASP.NET runtime version. For example, `Runtime=v4.0.30319` or `Runtime=v4.0`. |
 | httpd.processes | no | Specifies the number of worker processes associated with the application pool. A value other than 1 indicates a Web garden. The default value is 1. |
 | httpd.user | no | Application pool identity. For example, `httpd.user=www-data`. |
-| LLVM | no | When a worker process is created, [Jexus passes this flag to Mono](http://www.mono-project.com/Mono:Runtime:Documentation:LLVM). | 
+| LLVM | no | When a worker process is created, [Jexus passes this flag to Mono](http://www.mono-project.com/Mono:Runtime:Documentation:LLVM). The default value is false. | 
 
 The first two settings are mandatory.
 
