@@ -194,7 +194,7 @@ This script provides the following functionality,
 | jws stop | Stop Jexus server. |
 | jws stop site_name | Stop a single web site. |
 | jws regsvr | Register Jexus assembly in GAC. Note that this is only required to be executed once during installation. 
-jws status Report Jexus runtime status. |
+| jws status | Report Jexus runtime status. |
 | jws -v | Display Jexus version number. |
 
 The script should be set to executable during installation. The commands can only be executed by root.
