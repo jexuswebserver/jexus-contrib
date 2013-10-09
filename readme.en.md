@@ -186,6 +186,7 @@ Starting Jexus 5.3 the commands are merged into one Shell script, /usr/jexus/jws
 This script provides the following functionality,
 
 | Command | Description |
+| ------- | ----------- |
 | jws start | Start Jexus server. |
 | jws start site\_name | Start a single web site. Note that site_name must match one of the configuration files under configuration directory. |
 | jws restart | Restart Jexus server. |
