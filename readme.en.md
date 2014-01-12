@@ -122,7 +122,7 @@ The description of each settings is listed as below,
 | httpd.processes | no | Specifies the number of worker processes associated with the application pool. A value other than 1 indicates a Web garden. The default value is 1. |
 | httpd.user | no | Application pool identity. For example, `httpd.user=www-data`. |
 | httpd.MaxTotalMemory | no | (5.5+) Specifies the total physical memory (of MBytes) that all worker processes can consume before the pool starts to recyle worker processes. It ranges from `256` to 80% of maximum physical memory. The default is `0`, where Jexus automatically adjusts the usage. Note that for each worker process the minimum phsical memory usage is 128-MBytes. |
-| httpd.MaxCpuTime | no | (5.5+) Specifies how much CPU resources (of seconds) can be consumed by a single worker process before being recycled by the pool. It ranges from `600` to `14400`. |
+| httpd.MaxCpuTime | no | (5.5+) Specifies how much CPU resources (of seconds) can be consumed by a single worker process before being recycled by the pool. It ranges from `600` to `14400`. The default value is `3600`. |
 | LLVM | no | When a worker process is created, [Jexus passes this flag to Mono](http://www.mono-project.com/Mono:Runtime:Documentation:LLVM). The default value is false. | 
 
 The first two settings are mandatory.
