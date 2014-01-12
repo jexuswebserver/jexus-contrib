@@ -1,5 +1,5 @@
    
-README for Jexus Web Server 5.4.4
+README for Jexus Web Server 5.5
 ---------------------------------
 
 Jexus is a web server for Linux/UNIX operating systems, which serves ASP.NET web sites and applications. It is free (free as beer) and has an IIS alike architecture with high performance and stability, as well as the following features,
@@ -27,11 +27,11 @@ The following steps assume that you use latest Ubuntu Linux distro.
 
 ####2. Downloadn and unpack Jexus
 ```
-wget http://www.linuxdot.net/down/jexus-5.4.4.tar.gz
-tar -zxvf jexus-5.4.4.tar.gz
+wget http://www.linuxdot.net/down/jexus-5.5.tar.gz
+tar -zxvf jexus-5.5.tar.gz
 ```
 
-> Jexus binary package is downloaded from its official site, and extracted to a folder named “jexus-5.3.1″ after this step.
+> Jexus binary package is downloaded from its official site, and extracted to a folder named “jexus-5.5″ after this step.
 
 ####3. Create default web site
 
@@ -44,7 +44,7 @@ tar -zxvf jexus-5.4.4.tar.gz
 
 ####4. Install and launch Jexus
 ```
-cd jexus-5.4.4
+cd jexus-5.5
 sudo ./install
 cd /usr/jexus
 sudo ./jws start
@@ -62,21 +62,21 @@ Upgrade
 -------
 ####1. Download and unpack Jexus
 ```
-wget http://www.linuxdot.net/down/jexus-5.4.4.tar.gz
-tar -zxvf jexus-5.4.4.tar.gz
+wget http://www.linuxdot.net/down/jexus-5.5.tar.gz
+tar -zxvf jexus-5.5.tar.gz
 ```
-> Jexus binary package is downloaded from its official site, and extracted to a folder named “jexus-5.3.1″ after this step.
+> Jexus binary package is downloaded from its official site, and extracted to a folder named “jexus-5.5″ after this step.
 
 ####2. Stop old Jexus server,
 ```
 cd /usr/jexus
 sudo ./jws stop
 ```
-Note that for Jexus 5.2 and older, the second command should be `sudo ./jws.stop`.
+Note that for Jexus 5.2 and below, the second command should be `sudo ./jws.stop`.
 
 ####3. Copy new files to Jexus folder
 ```
-cd ~/jexus-5.4.4
+cd ~/jexus-5.5
 sudo ./upgrade
 ```
 
@@ -166,7 +166,7 @@ In default installation, a default web site is created. Its configuration file i
 * Index.aspx
 * default.aspx
 * Default.aspx
-* index.htm
+* index.htm5.4
 * Index.htm
 * default.htm
 * Default.htm
@@ -183,7 +183,7 @@ In default installation, a default web site is created. Its configuration file i
 
 Management Script and Commands
 ------------------------------
-Starting Jexus 5.3 the commands are merged into one Shell script, /usr/jexus/jws.
+Starting from Jexus 5.3 the commands are merged into one Shell script, /usr/jexus/jws.
 
 This script provides the following functionality,
 
