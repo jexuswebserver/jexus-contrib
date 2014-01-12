@@ -1,6 +1,13 @@
 Release Notes for Jexus Web Server
 ----------------------------------
 
+####Version 5.5
+Released on Jan 12, 2014
+
+1. Fixed "ASP.NET log entry might be incomplete" bug in logging.
+2. Added two settings in server configuration, `httpd.MaxTotalMemory` and `httpd.MaxCpuTime`.
+3. Added `app_offline.htm` support.
+
 ####Version 5.4.4
 Released on Oct 1, 2013
 
