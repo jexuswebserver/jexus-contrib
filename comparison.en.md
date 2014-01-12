@@ -22,11 +22,19 @@
 | Other IIS features | Complete | No | |
 
 *: Mono 3.2 is recommended, in which the Mono guys fixed most known issues.
+
 **: Other differences include but not limited to,
+
 1. Compared to IIS, Jexus uses a built-in algorithm to perform ping instead of providing related settings.
-2. Jexus worker process is fully managed.
+
+1. Jexus worker process is fully managed.
+
+1. IIS has a lot of settings to define when to recycle worker processes, while Jexus (5.5+) supports 2 settings, `httpd.MaxTotalMemory` and `httpd.MaxCpuTime`.
+
 ***: Other differences include,
 1. Jexus does not support actions such as Redirect or AbortRequest.
-2. Jexus does not support conditions.
-3. Jexus cannot break from cascading rules.
+
+1. Jexus does not support conditions.
+
+1. Jexus cannot break from cascading rules.
 
