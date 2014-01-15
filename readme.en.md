@@ -23,7 +23,9 @@ The following steps assume that you use latest Ubuntu Linux distro.
 ####1. Install Mono runtime.
 `sudo apt-get install mono-complete`
 
-> As Jexus requires Mono runtime, in this step we install latest stable Mono runtime (2.10.*) via apt-get. Mono 3.2.* is recommended. 
+> As Jexus requires Mono runtime, in this step we install latest stable Mono runtime via apt-get. 
+> For most Linux distros, 2.10.* is still the version in package repository. Jexus can work with such obsolete Mono versions, but the latest stable Mono (3.2.*) is highly recommended.
+> Please refer to the documentation of the specific distro if you don't know how to install Mono.
 
 ####2. Downloadn and unpack Jexus
 ```
@@ -72,7 +74,7 @@ tar -zxvf jexus-5.5.tar.gz
 cd /usr/jexus
 sudo ./jws stop
 ```
-Note that for Jexus 5.2 and below, the second command should be `sudo ./jws.stop`.
+Note that if the old Jexus in use is of version 5.2 and below, the second command should be changed to `sudo ./jws.stop`.
 
 ####3. Copy new files to Jexus folder
 ```
