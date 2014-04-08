@@ -16,14 +16,14 @@
 | Media Streaming | Windows Media formats only | Flash based formats only | |
 | Smooth Streaming | Complete | Partly | Jexus does not support live streaming. |
 | Logging | Complete | Partly | Jexus currently only logs to files. |
-| IIS Manager | Complete | No | |
+| IIS Manager | Complete | Jexus Manager is in development.[****] | |
 | Extensibility | Complete | No | |
 | Failed Request Tracing | Complete | No | |
 | Other IIS features | Complete | No | |
 
-*: Mono 3.2 is recommended, in which the Mono guys fixed most known issues.
+[*]: Mono 3.2 is recommended, in which the Mono guys fixed most known issues.
 
-**: Other differences include but not limited to,
+[**]: Other differences include but not limited to,
 
 1. Compared to IIS, Jexus uses a built-in algorithm to perform ping instead of providing related settings.
 
@@ -31,10 +31,14 @@
 
 1. IIS has a lot of settings to define when to recycle worker processes, while Jexus (5.5+) supports 2 settings, `httpd.MaxTotalMemory` and `httpd.MaxCpuTime`.
 
-***: Other differences include,
+[***]: Other differences include,
 1. Jexus does not support actions such as Redirect or AbortRequest.
 
 1. Jexus does not support conditions.
 
 1. Jexus cannot break from cascading rules.
 
+[****]: Jexus Manager is currently in 0.5 and is in private beta testing by a small group of Jexus users. It looks similar to IIS Manager, and utilizes an agent installed on Jexus machine to achieve remote management.
+
+* Jexus Manager is a Windows Forms based application that can run on any Windows/Linux/OS X machines with .NET Framework or Mono installed.
+* Jexus Manager Remote Services agent is a console application that must be installed together with Jexus web server on any Linux/FreeBSD machines, which Jexus Manager connects to read/write Jexus configuration.
