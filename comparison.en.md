@@ -16,14 +16,17 @@
 | Media Streaming | Windows Media formats only | Flash based formats only | |
 | Smooth Streaming | Complete | Partly | Jexus does not support live streaming. |
 | Logging | Complete | Partly | Jexus currently only logs to files. |
-| IIS Manager | Complete | Jexus Manager is in development.[****] | |
+| IIS Manager | Complete | [Jexus Manager is in development.](http://blog.lextudio.com/2014/04/jexus-series-announce-jexus-manager-management-console-for-jexus-web-server/) | |
 | Extensibility | Complete | No | |
 | Failed Request Tracing | Complete | No | |
+| Scripting | ADSI/WMI/PowerShell/appcmd/MWA | MWA is in development. | MWA (Microsoft.Web.Administration) is an API for .NET based languages, such as C#. |
 | Other IIS features | Complete | No | |
 
 [*]: Mono 3.2 is recommended, in which the Mono guys fixed most known issues.
 
 [**]: Other differences include but not limited to,
+
+1. This application pool is in classic mode.
 
 1. Compared to IIS, Jexus uses a built-in algorithm to perform ping instead of providing related settings.
 
@@ -37,8 +40,3 @@
 1. Jexus does not support conditions.
 
 1. Jexus cannot break from cascading rules.
-
-[****]: Jexus Manager is currently in 0.5 and is in private beta testing by a small group of Jexus users. It looks similar to IIS Manager, and utilizes an agent installed on Jexus machine to achieve remote management.
-
-* Jexus Manager is a Windows Forms based application that can run on any Windows/Linux/OS X machines with .NET Framework or Mono installed.
-* Jexus Manager Remote Services agent is a console application that must be installed together with Jexus web server on any Linux/FreeBSD machines, which Jexus Manager connects to read/write Jexus configuration.
