@@ -1,3 +1,5 @@
+This repository is obsolete and no more updated. Please visit https://jexus.codeplex.com/documentation for latest documentation.
+
 | Features | IIS 7+ | Jexus 5 | Differences | 
 | -------- | ------ | ------- | ----------- |
 | ASP.NET Web Forms | Complete | Complete | Jexus is affected by Mono limitations. [*] |
